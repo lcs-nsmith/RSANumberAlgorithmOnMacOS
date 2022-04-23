@@ -28,6 +28,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             HStack {
                 TextField("Radius",
                           text: $providedInput,
@@ -53,6 +54,7 @@ struct ContentView: View {
                 Text("RSA Number Count:")
                 Text(String(howManyRSANumbers))
             }
+            Spacer()
         }
     }
     func runAlgorithm() {
